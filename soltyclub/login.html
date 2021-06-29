@@ -1,0 +1,78 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300&display=swap" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/signupstyle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="col-md-8" style="margin:auto">
+<div class="loginform_slide register-form">
+                <div class="login_play_header text-center">Login and Play
+                  <button type="button" style="margin-top: -8px;color:#ffff;" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="form_block_spaces">
+                <div class="row">
+
+                  <div class="col-md-12 col-lg-12">
+                    <form data-element="modal_login" class="login">
+                      
+                      <div class="form-group mb-2">
+                        <label class="font_sz_signup">Username</label>
+                        <input type="text" id="inputEmail" name="login_username" class="form-control change_focus" onkeypress="return AvoidSpaceAndSpChar(event)" placeholder="Username" autofocus="" autocomplete="off" style="border: 1px solid rgb(206, 212, 218);">
+                        <div class="invalid-feedback"></div>
+                        <!-- <label for="inputEmail">Username</label> -->
+                      </div>
+                      
+
+                      <div class="form-group">
+                        <label class="font_sz_signup">Password</label>
+                        <input type="password" id="inputPassword" name="login_password" class="form-control change_focus" placeholder="Password" autocomplete="off" style="border: 1px solid rgb(206, 212, 218);">
+                        <div class="invalid-feedback"></div>
+                        <!-- <label for="inputPassword">Password</label> -->
+                        <input type="hidden" name="encrptpass" value="" id="encrptpass">
+                      </div>
+                      <div class="row">
+                      <div class="col-md-6 col-6">
+                        <div class="custom-control custom-checkbox mb-3 mt-4 text-left">
+                          <input type="checkbox" class="custom-control-input" ss="" id="customCheck1">
+                          <label class="custom-control-label" style="color: #868686!important;font-size: 18px;" for="customCheck1">Remember me</label>
+                        </div>
+                      </div>  
+
+                                            <div class="col-md-6 col-6">
+                        <div class="text-right mb-3 mt-4 ">
+                          <a class="small forget_font_text" data-toggle="modal" data-target="#forgot_password_model" href="#">Forgot password?</a></div>
+                      </div>
+                      
+                                            </div>
+                      <div class="col-md-12 text-center ">
+                         <div class="model-error-show text-center  m-b-4 loginerrormessage" style="color:red;"></div>
+                        <div class="button_outer">
+                          <button class="modal-btn login_btn_custum btn-block text-uppercase mb-2 theme-btn" type="submit">  Login <span class="fas fa-spinner fa-spin" style="display: none"> </span> </button>
+                        </div>
+                      </div>
+                      
+                      
+                      </form>
+                     
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-12 text-center bottom_signup_position pb-2"> 
+                    <div class="dont_have">
+                      <p>Don't have an account <a href="#" class="signupform_slide_btn">Sign up Now</a></p>
+                    </div>
+                  </div>
+              </div>
+              
+              </div>
+              </body>
+              </html>

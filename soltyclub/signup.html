@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300&display=swap" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/signupstyle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="modal-content border_r">
+        <!-- Modal body -->
+        <div class="modal-body padding_zero">
+          <div class="row no-gutters">
+           
+            <div class="col-lg-6 col-md-6 d-none d-sm-block taash_dis_none" style="overflow: hidden; z-index:999; ">
+
+             
+              <div id="demo" class="carousel slide form_img_slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                </ul>
+                <!-- The slideshow -->
+                   <div style="height: 100%!important" class="carousel-inner custom_carousel">
+                                           <div style="height: 100%!important" class="carousel-item active">
+                          <img style="height: 100%!important" src="http://taashclub.com/resources/assets/theme/comman/login_banner/casinologin.jpg" alt="CasinoNanTaw">
+                        </div>
+                                      </div>
+              </div>
+              
+              
+            </div>
+                         <div class="col-lg-12 col-md-12">
+                
+              <!-- loginform_slide start -->
+
+              <div class="loginform_slide register-form">
+                <div class="login_play_header text-center">Login and Play
+                  <button type="button" style="margin-top: -8px;color:#ffff;" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="form_block_spaces">
+                <div class="row">
+
+                  <div class="col-md-12 col-lg-12">
+                    <form data-element="modal_login" class="login">
+                      
+                      <div class="form-group mb-2">
+                        <label class="font_sz_signup">Username</label>
+                        <input type="text" id="inputEmail" name="login_username" class="form-control change_focus" onkeypress="return AvoidSpaceAndSpChar(event)" placeholder="Username" autofocus="" autocomplete="off" style="border: 1px solid rgb(206, 212, 218);">
+                        <div class="invalid-feedback"></div>
+                        <!-- <label for="inputEmail">Username</label> -->
+                      </div>
+                      
+
+                      <div class="form-group">
+                        <label class="font_sz_signup">Password</label>
+                        <input type="password" id="inputPassword" name="login_password" class="form-control change_focus" placeholder="Password" autocomplete="off" style="border: 1px solid rgb(206, 212, 218);">
+                        <div class="invalid-feedback"></div>
+                        <!-- <label for="inputPassword">Password</label> -->
+                        <input type="hidden" name="encrptpass" value="" id="encrptpass">
+                      </div>
+                      <div class="row">
+                      <div class="col-md-6 col-6">
+                        <div class="custom-control custom-checkbox mb-3 mt-4 text-left">
+                          <input type="checkbox" class="custom-control-input" ss="" id="customCheck1">
+                          <label class="custom-control-label" style="color: #868686!important;font-size: 18px;" for="customCheck1">Remember me</label>
+                        </div>
+                      </div>  
+
+                                            <div class="col-md-6 col-6">
+                        <div class="text-right mb-3 mt-4 ">
+                          <a class="small forget_font_text" data-toggle="modal" data-target="#forgot_password_model" href="#">Forgot password?</a></div>
+                      </div>
+                      
+                                            </div>
+                      <div class="col-md-12 text-center ">
+                         <div class="model-error-show text-center  m-b-4 loginerrormessage" style="color:red;"></div>
+                        <div class="button_outer">
+                          <button class="modal-btn login_btn_custum btn-block text-uppercase mb-2 theme-btn" type="submit">  Login <span class="fas fa-spinner fa-spin" style="display: none"> </span> </button>
+                        </div>
+                      </div>
+                      
+                      
+                      </form>
+                     
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-12 text-center bottom_signup_position pb-2"> 
+                    <div class="dont_have">
+                      <p>Don't have an account <a href="#" class="signupform_slide_btn">Sign up Now</a></p>
+                    </div>
+                  </div>
+              </div>
+              <!-- loginform_slide End -->
+
+
+              <!-- signupform_slide start -->
+              <div class="signupform_slide register-form">
+                
+                <div class="login_play_header text-center">SIGNUP AND START WINNING
+                <button type="button" style="margin-top: -8px;color:#ffff;" class="close" data-dismiss="modal">×</button>
+              </div>
+            <div class="validationText3 text-center" style="color: red;font-size: 12px;margin-bottom: 10px;"></div>
+            <!-- <div class="alert alert-danger validationText3 hidden">
+              
+            </div> -->
+            <div class="container">
+              <div class="row row_margin">
+
+                <div class="col-md-12 col-xs-12 col-12">
+                  <label class="font_sz_signup ">Username</label>
+                  <input type="text" class="form-control signup_inputxt" id="user_name" maxlength="12" onkeypress="javascript:return AvoidSpaceAndSpChar(event)" placeholder="Enter Username" name="email" style="border: 1px solid rgb(206, 212, 218);"> 
+                 <input type="hidden" name="user_id" id="user_id" value="" style="border: 1px solid rgb(206, 212, 218);">
+                 <input type="hidden" id="mobile_otp" value="0">
+                 <input type="hidden" id="email_otp" value="0">
+                  <div class="validationText4" style="color: red;font-size: 12px;"></div>
+                </div>
+                
+              </div>
+              <div class="row row_margin">
+                <div class="col-md-6 col-xs-6 col-6">
+                  <label class="font_sz_signup ">Password </label>
+                   <input type="password" class="form-control" maxlength="12" id="txtPassword" onkeypress="return AvoidSpaceAndSpChar(event)" placeholder="Password" name="password" style="border: 1px solid rgb(206, 212, 218);"> 
+                  <div class="validationTextp" style="color: red;font-size: 12px;"></div>
+                </div>
+                <div class="col-md-6 col-xs-6 col-6">
+                  <label class="font_sz_signup ">Confirm Password</label>
+                  <input type="password" class="form-control" maxlength="12" id="txtConfirmPassword" onkeypress="return AvoidSpaceAndSpChar(event)" onfocus="myFunction()" placeholder="Confirm Password" name="cnf_password" style="border: 1px solid rgb(206, 212, 218);"> 
+                   <div class="validationText1" style="color: red;font-size: 12px;"></div>
+                </div>
+              </div>
+                            <div class="row row_margin">
+                <div class="col-md-8 col-xs-8 col-8 1">
+                  <label class="font_sz_signup ">Mobile Number</label>
+                  <div class="input_box d-flex pos-relative">
+                  <input type="text" class="form-control mns_pd" id="mob_num" maxlength="10" onfocus="myFunction()" onkeypress="return NumberOnly(event)" placeholder="Mobile Number" name="ph_number" style="border: 1px solid rgb(206, 212, 218);"> 
+                  <span class="country_code">+91</span>
+                                          <button type="button" id="get_otp" disabled="disabled" name="mobile_otp" class="btn input-xs signup_otp get_otp_margin pl-3">Send<br> OTP</button>
+                                    </div>
+                <div class="validationText2" style="color: red;font-size: 12px;"></div>
+                </div>
+               
+               
+
+                                <div class="col-md-4 col-xs-4 col-4 hideandshow hidden">
+                  <label class="font_sz_signup ">OTP</label>
+                  <div class="input_box d-flex">
+                    
+                    <input type="text" style="padding-left: 10px !important; border: 1px solid rgb(206, 212, 218);" class="form-control mns_pd" placeholder="Enter OTP" name="otp" id="final_otp"> 
+                    
+                    </div>
+                    <div class="finalopp" style="color: red;font-size: 12px;"></div> 
+                </div>
+
+                              </div>
+              
+                                             <input type="hidden" id="email_id" name="email_id" value="" style="border: 1px solid rgb(206, 212, 218);"> 
+                                              
+                                              
+               
+              </div>
+              
+               <div class="container">
+                <div class="row row_margin " style="min-height: 40px;">
+                  <div class="col-md-6 align-self-center col-xs-6 col-6">
+                    <div class="remember_trm">  
+                        <label class="container_check pt-1 mb-0">Have a promocode?
+                          <input id="promo_check" type="checkbox">
+                          <span class="checkmark ml-2"></span>
+                        </label>      
+                    </div>
+                  </div>
+                  <div class="col-md-6 padding_on_device col-xs-6 col-6">
+                    <input type="text" class="form-control show-promo-box hidden" onkeypress="return AvoidSpaceAndSpChar(event)" maxlength="10" placeholder="Enter Code" name="promo_code" id="promo_code" style="border: 1px solid rgb(206, 212, 218);"> 
+                    <div class="promo_code_valid" style="color: red;font-size: 12px;"></div>
+                  </div>
+          
+                </div>
+              </div>
+                             
+              <div class="row row_margin ">
+                <div class="container">
+                <div class="col-md-12">
+                  <label class="container_check" style="font-size: 12px"><input id="chk1" type="checkbox"><span class="checkmark ml-2"></span>I accept to the <a href="http://taashclub.com/terms-condition">terms and conditions</a> and Privacy Policy and confirm that I am legally of age and fully competent.
+                  </label> 
+                  
+                </div>
+              </div>
+              </div>
+              <div class="row row_margin ">
+                <div class="col-md-12 text-center">
+                  <div class="alert-danger1 mb-0" style="display:none;padding: 0.5rem 0.25rem!important;color: red"></div>
+                  <div class="alert-success1 mb-0" style="display:none;padding: 0.5rem 0.25rem!important;color: green"></div>
+                </div>
+              </div>
+              <div class="row row_margin ">
+                <div class="col-md-12 text-center">
+                  <!-- <button type="button" class="btn custom-btn-profile-bg" data-dismiss="modal">Cancel</button> -->
+                  <button type="button" class="btn input-xs pull-left login_btn_custum mt-0 theme-btn" onclick="return Validate()" id="final_submit" disabled="disabled" name="no_otp">Signup</button>
+                </div>
+              </div>
+              <div class="row row_margin ">
+                <div class="col-md-12 text-center bottom_signup_position pb-2"> 
+                    <div class="dont_have">
+                        <p>I already have an account<a href="#" class="pl-1 loginform_slide_btn">Login</a></p>
+                    </div>
+                </div>
+              </div>
+                             
+                          </div>
+
+              </div>
+              <!-- signupform_slide End -->
+              </div>
+            </div>
+            <div class="row no-gutters device_error_message" style="display: none">
+               <div class="model-error-show col-sm-8 p-2 loginerrormessage2" style="color:red;">
+                  
+                </div>
+                <div class="col-sm-4 text-center p-2">
+                  <button class="btn btn-block btn-login text-uppercase font-weight-bold" onclick="onclickSFSlogin();" style="color: #ffff;background: #099913;"> Continue Here</button>
+                </div>
+            </div>
+          </div>
+</body>
+</html>
